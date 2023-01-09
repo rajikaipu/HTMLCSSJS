@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>eGov4u - YouTube Videos</title>
+<style type="text/css">
+.ytitle{
+background-color: #FFCC00; width:280px; color: #000000; font-family: Verdana,Helvetica,sans-serif;  font-size: 14px;   font-weight: bold;   padding: 5px 0px 5px 0px;
+}
+.ytitle a{ color: #000000; text-decoration:none;}
+.ytitle a:hover{ color: #000000; text-decoration:underline;}
+.ytext{color: #000000;}
+table.egov4uPub tbody tr td table tbody tr td#_invisibleIfEmpty.TabBorder div table.s4-wpTopTable tbody tr td div#WebPartWPQ4.ms-WPBody div.ytitle a.ytext{    color: #000000;    text-decoration: none;	font-weight: bold;font-size: 14px; padding-left: 5px;}
+table.egov4uPub tbody tr td table tbody tr td#_invisibleIfEmpty.TabBorder div table.s4-wpTopTable tbody tr td div#WebPartWPQ4.ms-WPBody div.ytitle a.ytext:hover{    color: #000000;    text-decoration: underline;}
+</style>
+</head>
+<body>
+<div class="ytitle"><span>&nbsp;</span><a class="ytext" title="YouTube Updates" href="http://www.egov4u.eu/Pages/Videos.aspx">YouTube Updates</a></div>
+<div id="player"></div>
+<script>
+    //Load player api asynchronously.
+    var tag = document.createElement('script');
+    tag.src = "http://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    var done = false;
+    var player;
+	function onYouTubePlayerAPIReady() {
+	player = new YT.Player('player', {
+	  height: '250',
+	  width: '280',
+	  videoId: 'CQknBy8eBKU',
+	  playerVars: { 'autoplay': 0, 'controls': 1, 'playlist':['CQknBy8eBKU','BIt4snheQD4','KmcCBblOSxE','msV-AWoSN-I','wRBv5yoSjXk','1jMfaLTo014','BIt4snheQD4','kjtXgOcasl8']},
+	  events: {
+		'onReady': onPlayerReady,
+		'onStateChange': onPlayerStateChange
+	  }
+	});
+	}
+    function onPlayerReady(evt) {
+        evt.target.playVideo();
+    }
+    function onPlayerStateChange(evt) {
+        if (evt.data == YT.PlayerState.PLAYING && !done) {
+            setTimeout(stopVideo,0);
+            done = true;
+        }
+    }
+    function stopVideo() {
+        player.stopVideo();
+    }
+</script>
+<br/>
+<iframe id="fr" src="https://www.youtube.com/@etvteluguindia" style="overflow: hidden; height: 105px; width: 280px; border: 0;" scrolling="no" frameBorder="0"></iframe> 
+</body>
+</html>

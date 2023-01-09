@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Font</title>
+<script type="text/javascript">
+var min=8;
+var max=18;
+function increaseFontSize() {
+ 
+   var p = document.getElementsByTagName('p');
+   for(i=0;i<p.length;i++) {
+ 
+      if(p[i].style.fontSize) {
+         var s = parseInt(p[i].style.fontSize.replace("px",""));
+      } else { 
+         var s = 12;
+      }
+      if(s!=max) { 
+         s += 1;
+      }
+      p[i].style.fontSize = s+"px" 
+   }
+}
+function decreaseFontSize() {
+   var p = document.getElementsByTagName('p');
+   for(i=0;i<p.length;i++) {
+ 
+      if(p[i].style.fontSize) {
+         var s = parseInt(p[i].style.fontSize.replace("px",""));
+      } else { 
+         var s = 12;
+      }
+      if(s!=min) { 
+         s -= 1;
+      }
+      p[i].style.fontSize = s+"px" 
+   }
+}
+  </script>
+</head>
+<body>
+
+<a href="javascript:decreaseFontSize();">-</a> 
+<a href="javascript:increaseFontSize();">+</a>
+
+
+<p>
+
+
+
+Personalization
+
+While Social Plugins offer an easy way to personalized your site, once you have added login to your site, you can access the full power of the Graph API to create an even deeper personalized experience for your users. You can use the Graph API to access the user's Facebook profile, using this data in your own custom experience. You can use the Graph API to publish to the user's Facebook Wall and their News Feed. You can use the Graph API to access the user's social graph, bring their friends directly to your site all in your own custom experience.
+
+The Javascript SDK provides a straightforward way to access the Graph API: FB.api. This function takes a string argument which specifies the part of the Graph to target and a callback function that is invoked when the call completes. 
+
+
+
+
+
+
+
+
+
+
+</p>
+
+</body>
+</html>
