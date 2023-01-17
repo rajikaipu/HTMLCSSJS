@@ -1,0 +1,99 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Radio</title>
+</head>
+<body>
+<table><tr>
+<td>
+
+<script type="text/javascript"> 
+<!--
+function telugusong(){
+document.getElementById('telugumusic1').innerHTML
+= "<embed type='application/x-mplayer2' id='telugumusic2' pluginspage='http://www.microsoft.com/Windows/MediaPlayer/' src='"+document.getElementById('telugustation').value+"' name='MediaPlayer1' width='200' height='60' controltype='2' showcontrols='1' showstatusbar='1' AutoStart='true'></embed>";
+}
+//-->
+</script> 
+<div id="telugumusic1"> 
+<embed pluginspage="http://www.microsoft.com/Windows/MediaPlayer/" controltype="2" autostart="1" showstatusbar="1" type="application/x-mplayer2" height="60" src="." id="telugumusic2" width="200" showcontrols="1" volume="1"
+name="MediaPlayer1"> 
+</embed>
+</div>
+<select id="telugustation" onchange="telugusong()" style="width:200px; color:#494949;" name="telugustation" size="20">
+<option value=" "/> **Select Telugu Radio**
+<option value=" "/>                               
+<option value="http://www.radiokhushi.com/asx/liveaus1.asx"/>Radio Kushi- AUS
+<option value="http://www.radiokhushi.com/asx/liveind1.asx"/>Radio Kushi- INDIA 
+<option value="http://www.radiokhushi.com/asx/livegmt1.asx"/>Radio Kushi- UK 
+<option value="http://www.radiokhushi.com/asx/liveest1.asx"/>Radio Kushi- USA EST
+<option value="http://www.radiokhushi.com/asx/livepst1.asx"/>Radio Kushi- USA PST
+<option value=" "/>
+<option value="http://38.101.195.5:8032/"/>Telugu One Tori- AUS
+<option value="http://38.101.195.5:8132/"/>Telugu One Tori- INDIA
+<option value="http://38.101.195.5:8232/"/>Telugu One Tori- UK 
+<option value="http://38.101.195.5:8432/"/>Telugu One Tori- USA EST
+<option value="http://38.101.195.5:8332/"/>Telugu One Tori- USA PST
+<option value="http://www.radiosai.org/Pages/AsiaStream.asx"/>Radio Sai Global
+</select>
+
+
+</td><td>
+
+<script type="text/javascript"> 
+<!--
+function hindisong(){
+document.getElementById('hindimusic1').innerHTML
+= "<embed type='application/x-mplayer2' id='music2' pluginspage='http://www.microsoft.com/Windows/MediaPlayer/' src='"+document.getElementById('hindistation').value+"' name='MediaPlayer1' width='200' height='60' controltype='2' showcontrols='1' showstatusbar='1' AutoStart='true'></embed>";
+}
+//-->
+</script> 
+
+<div id="hindimusic1"> 
+<embed pluginspage="http://www.microsoft.com/Windows/MediaPlayer/" controltype="2" autostart="1" showstatusbar="1" type="application/x-mplayer2" height="60" src="." id="hindimusic2" width="200" showcontrols="1" 
+name="MediaPlayer1"> 
+</embed>
+</div>
+<select id="hindistation" onchange="hindisong()" style="width:200px; color:#494949;" name="hindistation" size="20">
+<option value=" "/>******Select Hindi Radio********
+<option value=" "/> 
+<option value="http://radiosbsfm.nl/Files/Pages/Home/RadioSBSFM.asx"/>SBS FM
+<option value="http://www.sabrasradio.com/res/wm_hi.m3u"/>Sabras Radio Live
+</select>
+</td><td>
+<script type="text/javascript"> 
+<!--
+function tamilsong(){
+document.getElementById('tamilmusic1').innerHTML
+= "<embed type='application/x-mplayer2' id='music2' pluginspage='http://www.microsoft.com/Windows/MediaPlayer/' src='"+document.getElementById('tamilstation').value+"' name='MediaPlayer1' width='200' height='60' controltype='2' showcontrols='1' showstatusbar='1' AutoStart='true'></embed>";
+}
+//-->
+</script> 
+
+<div id="tamilmusic1"> 
+<embed pluginspage="http://www.microsoft.com/Windows/MediaPlayer/" controltype="2" autostart="1" showstatusbar="1" type="application/x-mplayer2" height="60" src="." id="tamilmusic2" width="200" showcontrols="1" 
+name="MediaPlayer1"> 
+</embed>
+</div>
+<select id="tamilstation" onchange="tamilsong()" style="width:200px; color:#494949;" name="tamilstation" size="20">
+<option value=" "/>******Select Tamil Radio********
+<option value=" "/>                               
+<option value="http://cmrtamil.com/fm.php?id=3"/>Canadian Multicultural
+<option value="http://extamil.com/radio"/>Express FM 
+<option value="http://www.geethamradio.com:8020/hifi.mp3.m3u"/>Geetham
+<option value="http://www.geethamradio.com:8020/new_hifi.mp3.m3u"/>Geetham New
+<option value="http://www.geethamradio.com:8020/80s_hifi.mp3.m3u"/>Geetham 80's
+<option value="mms://st.malargal.com/shyamradio"/>Shyam Radio
+<option value="http://66.90.103.189:8852/"/>Tamil Aruvi FM 
+<option value="http://tamilsflashfm.com/hi2world.asx"/>Tamil Flash FM
+<option value="http://220.247.227.3/live"/>Thendral FM
+<option value="http://87.117.228.59:8632/"/>Thuthi FM
+</select>
+</td>
+</tr></table>
+
+</body>
+</html>
