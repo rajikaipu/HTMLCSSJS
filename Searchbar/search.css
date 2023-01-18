@@ -3,14 +3,28 @@
     margin-top: 5rem;
     text-align: center;
 }
+input[type=text]{
+    width: 70%;
+    
+}
 #mysearch{
     width:100%;
     padding: 0.2rem;
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
 }
 
 #myMenu{
     padding: 0.2rem;
     list-style: none;
-    
+    text-align: left;
+    margin-left: 8rem;
+
+}
+ li:hover{
+    background-color: #ccc;
+}
+button{
+    background-color: #005c99;
+    width:10%;
+    color:	 #ffffff;
 }
